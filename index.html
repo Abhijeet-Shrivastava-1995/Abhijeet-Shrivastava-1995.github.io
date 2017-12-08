@@ -37,11 +37,20 @@
         <script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/31/1/onion.js"></script>
         <script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/31/1/controls.js"></script>
         <script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/31/1/stats.js"></script>
+        <script>
+         window.onload = function() {
+                document.getElementById("preloader").style.display = "block"
+                document.getElementById("innerloader").style.display = "block"
+                setTimeout(function() {
+                        document.getElementById("preloader").style.display = "none"
+                        document.getElementById("innerloader").style.display = "none"
+                }, 3000);
+        }</script>
 </head>
 <body>
 <!-- loader starts -->
-<div class="loader" style="display:none">
-        <div class="loader-inner" style="display:none">
+<div class="loader" id="preloader" style="display:none">
+        <div class="loader-inner" id="innerloader" style="display:none">
                 <div class="sk-cube-grid">
                         <div class="sk-cube sk-cube1"></div>
                         <div class="sk-cube sk-cube2"></div>
@@ -245,7 +254,9 @@
 </body>
 
 <script type="text/javascript">
-        function displayer(){
+       
+
+          function displayer(){
                 document.getElementById("first_menu").style.display = "block"
                 document.getElementById("second_menu").style.display = "block"
                 setTimeout(hide,10000);
