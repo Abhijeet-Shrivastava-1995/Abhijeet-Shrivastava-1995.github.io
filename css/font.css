@@ -189,8 +189,7 @@
   font-family: "fontello";
   font-style: normal;
   font-weight: normal;
-  speak: none;
- 
+  
   display: inline-block;
   text-decoration: inherit;
   width: 1em;
@@ -810,7 +809,7 @@
 .icon-export-1:before { content: '\ea4b'; } /* 'î©‹' */
 .icon-pencil-1:before { content: '\ea4c'; } /* 'î©Œ' */
 .icon-feather:before { content: '\ea4d'; } /* 'î©' */
-.icon-print-1:before { content: '\ea4e'; } /* 'î©Ž' */
+.icon-print-1:before { content: '\ea4e'; } 
 .icon-retweet-1:before { content: '\ea4f'; } /* 'î©' */
 .icon-keyboard-1:before { content: '\ea50'; } /* 'î©' */
 .icon-comment-1:before { content: '\ea51'; } /* 'î©‘' */
@@ -2425,7 +2424,7 @@
 [data-icon]:before {
 	font-family: 'et-line';
 	content: attr(data-icon);
-	speak: none;
+	
 	font-weight: normal;
 	font-variant: normal;
 	text-transform: none;
@@ -2443,7 +2442,7 @@ you can use the generic selector below, but it's slower:
 */
 .ic-mobile, .ic-laptop, .ic-desktop, .ic-tablet, .ic-phone, .ic-document, .ic-documents, .ic-search, .ic-clipboard, .ic-newspaper, .ic-notebook, .ic-book-open, .ic-browser, .ic-calendar, .ic-presentation, .ic-picture, .ic-pictures, .ic-video, .ic-camera, .ic-printer, .ic-toolbox, .ic-briefcase, .ic-wallet, .ic-gift, .ic-bargraph, .ic-grid, .ic-expand, .ic-focus, .ic-edit, .ic-adjustments, .ic-ribbon, .ic-hourglass, .ic-lock, .ic-megaphone, .ic-shield, .ic-trophy, .ic-flag, .ic-map, .ic-puzzle, .ic-basket, .ic-envelope, .ic-streetsign, .ic-telescope, .ic-gears, .ic-key, .ic-paperclip, .ic-attachment, .ic-pricetags, .ic-lightbulb, .ic-layers, .ic-pencil, .ic-tools, .ic-tools-2, .ic-scissors, .ic-paintbrush, .ic-magnifying-glass, .ic-circle-compass, .ic-linegraph, .ic-mic, .ic-strategy, .ic-beaker, .ic-caution, .ic-recycle, .ic-anchor, .ic-profile-male, .ic-profile-female, .ic-bike, .ic-wine, .ic-hotairballoon, .ic-globe, .ic-genius, .ic-map-pin, .ic-dial, .ic-chat, .ic-heart, .ic-cloud, .ic-upload, .ic-download, .ic-target, .ic-hazardous, .ic-piechart, .ic-speedometer, .ic-global, .ic-compass, .ic-lifesaver, .ic-clock, .ic-aperture, .ic-quote, .ic-scope, .ic-alarmclock, .ic-refresh, .ic-happy, .ic-sad, .ic-facebook, .ic-twitter, .ic-googleplus, .ic-rss, .ic-tumblr, .ic-linkedin, .ic-dribbble {
 	font-family: 'et-line';
-	speak: none;
+	
 	font-style: normal;
 	font-weight: normal;
 	font-variant: normal;
