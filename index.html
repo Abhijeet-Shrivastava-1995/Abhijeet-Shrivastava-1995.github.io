@@ -91,12 +91,12 @@
         </section>
         <!-- navigation container -->
         <div class="nav-container base">
-                <nav class="main-nav default">
+                <nav class="main-nav default" style="display:block;">
                         <div class="container">
                                 <div class="row">
-                                        <div class="mobile-menu-holder">
-                                                <a class="mobile-btn" href="#">
-                                                        <i class="fa fa-menu"></i>
+                                        <div class="mobile-menu-holder" >
+                                                <a class="mobile-btn" >
+                                                        <button onclick="displayer()" class="fa fa-bars"></button>
                                                 </a>
                                         </div>
                                 </div>
@@ -104,7 +104,7 @@
                         <div class="container">
                                 <div class="row">
                                         <div class="col-sm-5 t-center">
-                                                <ul class="menu first">
+                                                <ul class="menu first" id="first_menu" >
                                                         <li>
                                                                 <a class="scroll" href="#home">
                                                                         home <i class="fa fa-home"></i>
@@ -136,11 +136,11 @@
                                                 </div>
                                         </div>
                                         <div class="col-sm-5 t-center">
-                                                <ul class="menu second">
+                                                <ul class="menu second" id="second_menu">
                                                         <li>
                                                                 <a class="scroll" href="#portfolio">
                                                                         Portfolio
-                                                                        <i class="icon-camera">
+                                                                        <i class="fa fa-camera">
 
                                                                         </i>
                                                                 </a>
@@ -148,13 +148,13 @@
                                                         <li>
                                                                 <a class="scroll" href="#blog">
                                                                         Blog
-                                                                        <i class="icon-chat"></i>
+                                                                        <i class="fa fa-comments"></i>
                                                                 </a>
                                                         </li>
                                                         <li>
                                                                 <a class="scroll" href="#contact">
                                                                         Contact
-                                                                        <i class="icon-paper-plane"></i>
+                                                                        <i class="fa fa-envelope"></i>
                                                                 </a>
                                                         </li>
                                                 </ul>
@@ -252,5 +252,15 @@
 <script src="js/jquery.appear.min.js" type="text/javascript"></script>
 <script src="js/timer.js" type="text/javascript"></script>
 <script src="js/placeholders.min.js" type="text/javascript"></script>
-
+<script type="text/javascript">
+        function displayer(){
+                document.getElementById("first_menu").style.display = "block"
+                document.getElementById("second_menu").style.display = "block"
+                setTimeout(hide,10000);
+        }
+        function hide(){
+                document.getElementById("first_menu").style.display = "none"
+                document.getElementById("second_menu").style.display = "none"
+        }
+</script>
 </html>
