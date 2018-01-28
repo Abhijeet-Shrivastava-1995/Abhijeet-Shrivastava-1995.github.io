@@ -173,16 +173,19 @@
                                                 <span>HomeTown</span>: Jabalpur
                                         </li>
                                         <li>
-                                                <span>Follows</span>: Robert Downey Jr.
+                                                <span>College</span>: Gyan Ganga Institute of Technology and Sciences(GGITS),Jabalpur
                                         </li>
                                         <li>
-                                                <span>Crazy About</span>: Iron-Man
+                                                <span>School</span>: Christ Church Boys' Senior Secondary School, Jabalpur
+                                        </li>
+                                        <li>
+                                                <span>Follows</span>: Robert Downey Jr.
                                         </li>
                                         <li>
                                                 <span>Dream Project</span>: J.A.R.V.I.S
                                         </li>
                                         <li>
-                                                <span>Hobbies</span>: Singing<br/>Watching Robert Downey Jr. movies<br/>Reading Harry Potter<br/>Playing guitar
+                                                <span>Hobbies</span>: Singing<br/>Watching fictional and sci-fi movies<br/>Playing guitar
                                         </li>
                                 </ul>
                              
@@ -196,9 +199,9 @@
                                                  <li class="mt-40" style="color:black">Internship</li>
                                              <p style="font-size:18px"> Internee as a Full-Stack Web Developer at Finament Technologies, a micro-credit lending startup based at Bengaluru, for a month from November 2017.</p> 
                                              <li class="mt-40" style="color:black">FoxoGyan</li>
-                                             <p style="font-size:18px"> Internee as a Full-Stack Web Developer at Finament Technologies, a micro-credit lending startup based at Bengaluru, for a month from November 2017.</p> 
-                                             <li class="mt-40" style="color:black">Internship</li>
-                                             <p style="font-size:18px"> Internee as a Full-Stack Web Developer at Finament Technologies, a micro-credit lending startup based at Bengaluru, for a month from November 2017.</p> 
+                                             <p style="font-size:18px">Foxogyan is the first official Mozilla Club of Jabalpur City. I served as a club captain for 2016-2018.</p> 
+                                             <li class="mt-40" style="color:black">GGITS Code Club</li>
+                                             <p style="font-size:18px">Is a representative member of GGITS CodeChef Student Chapter in Jabalpur. </p> 
                                         
                                         </ul>
                                  </div>
@@ -262,15 +265,23 @@
 
 <script type="text/javascript">
        
-
+        var clickcount=0;
           function displayer(){
-                document.getElementById("first_menu").style.display = "block"
-                document.getElementById("second_menu").style.display = "block"
-                setTimeout(hide,5000);
+                  clickcount++;
+                  console.log(clickcount)
+                  if (clickcount == 1) 
+                  {
+                        document.getElementById("first_menu").style.display = "block"
+                        document.getElementById("second_menu").style.display = "block"
+                  }
+                  if (clickcount > 1){
+                        document.getElementById("first_menu").style.display = "none"
+                        document.getElementById("second_menu").style.display = "none"
+                        clickcount = 0;
+                  }
+                
+        
         }
-        function hide(){
-                document.getElementById("first_menu").style.display = "none"
-                document.getElementById("second_menu").style.display = "none"
-        }
+      
 </script>
 </html>
